@@ -13,7 +13,7 @@
     <platform name="android" />
     <platform name="winphone" />
 	
-    <name>UPVS: Ultimate Power Vending System</name>
+    <name>UPVS</name>
     <description>Ultimate Power Vending System</description>
     <author href="https://www.tinuten.org" email="info@tinuten.org">Olumide Francis</author>
     <!--<content src="index.html" />-->
