@@ -51,8 +51,7 @@
 
 
 
-
-   <icon src="icon.png" />
+ 
 
 <icon platform="ios" height="60" width="60" src="res/icons/ios/icon-60.png" />
 <icon platform="ios" height="120" width="120" src="res/icons/ios/icon-60-2x.png" />
