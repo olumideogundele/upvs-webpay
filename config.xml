@@ -3,7 +3,7 @@
 	id        = "com.tinuten.upvs"
 	versionCode="1"
 	version   = "1.0.0">
-	<preference name="phonegap-version" value="cli-6.5.0"/>
+	<preference name="phonegap-version" value="cli-7.0.1"/>
     <name>UPVS</name>
     <description>ULTIMATE POWER VENDING SYSTEM</description>
     <author></author>
