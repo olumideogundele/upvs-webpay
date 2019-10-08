@@ -7,8 +7,7 @@
     <name>UPVS</name>
     <description>ULTIMATE POWER VENDING SYSTEM</description>
     <author></author>
-    <icon src="icon.png" width="128" height="128" />
-    <icon src="icon.png" width="256" height="256" />
+ 
     <preference name="permissions" value="none" />
     <preference name="android-targetSdkVersion" value="27" />
  <plugin name="cordova-plugin-battery-status" spec="~2.0.3" />
