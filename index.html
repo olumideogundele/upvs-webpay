@@ -1,22 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
  <script>
-	 function alertDismissed() {
-            // do something
-          navigator.notification.beep(2);
-          navigator.vibrate(3000);
-        }
-	 
-	 
-	  function showAlert(value) {
-        navigator.notification.alert(
-            'You have unread '+value+' message(s).',  // message
-            alertDismissed,         // callback
-            'EzyRide',            // title
-            'Dismiss'                  // buttonName
-        );
-    }
-	 
+ 
+ 
 	
 	function showUser() {
 	  global_ = "";
@@ -257,7 +243,7 @@ setInterval(run, 3000);
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
-<script src="https://github.com/katzer/cordova-plugin-badge/blob/master/www/badge.js"> </script> 
+ 
  
         <script type="text/javascript" src="js/index.js"></script>
      
@@ -266,77 +252,7 @@ setInterval(run, 3000);
         </script>
       
    
-        <script type="text/javascript">
-		
-            var dialog;
-            showToast = function (text) {
-                setTimeout(function () {
-                    if (window.Windows !== undefined) {
-                        showWinDialog(text);
-                    } else
-                    if (window.plugins && window.plugins.toast) {
-			    if(String(text) !== "0")
-			    {
-                        window.plugins.toast.showShortBottom(String(text));
-			    }
-                    }
-                    else {
-			    if(text != "-")
-			    {
-                        //alert(text);
-			    }
-                    }
-                }, 100);
-            };
-            showWinDialog = function (text) {
-                if (dialog) {
-                    dialog.content = text;
-                    return;
-                }
-                dialog = new Windows.UI.Popups.MessageDialog(text);
-                dialog.showAsync().done(function () {
-                    dialog = null;
-                });
-            };
-        </script>
-
-        <script type="text/javascript">
-	  clearBadge = function () {
-                cordova.plugins.notification.badge.clear(showToast);
-            };
-            setBadge = function (rand) {
-                var number = rand ? Math.round(Math.random()*100) : 10;
-                cordova.plugins.notification.badge.set(number, showToast);
-            };
-            getBadge = function () {
-                cordova.plugins.notification.badge.get(showToast);
-            };
-            increaseBadge = function () {
-                cordova.plugins.notification.badge.increase(1, showToast);
-            };
-            decreaseBadge = function () {
-                cordova.plugins.notification.badge.decrease(1, showToast);
-            };
-            hasPermission = function () {
-                cordova.plugins.notification.badge.hasPermission(showToast);
-            };
-            registerPermission = function () {
-                cordova.plugins.notification.badge.registerPermission(showToast);
-            };
-            switchAutoClear = function () {
-                cordova.plugins.notification.badge.configure({
-                    autoClear: !cordova.plugins.notification.badge._config.autoClear
-                });
-                showToast('Set autoClear to \n' + cordova.plugins.notification.badge._config.autoClear);
-            };
-            changeTitle = function () {
-                var title = cordova.plugins.notification.badge._config.title + '_new';
-                cordova.plugins.notification.badge.configure({
-                    title: title
-                });
-                showToast('Set title to \n"' + title + '"');
-            };
-        </script>
+        
 
 </body>
 
