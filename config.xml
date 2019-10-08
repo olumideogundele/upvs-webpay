@@ -98,14 +98,7 @@
  
 	
 	
- 
-
-   <!-- <plugin name="org.apache.cordova.device" version="0.2.3" source="npm"/> -->
-    
- 
-		
-		<feature name="http://tizen.org/api/systeminfo" required="true"/>
-		 
+  
 		<feature name="http://api.phonegap.com/1.0/media" />
 		<feature name="http://api.phonegap.com/1.0/network" />
 		<feature name="http://api.phonegap.com/1.0/notification" />
