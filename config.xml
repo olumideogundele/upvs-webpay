@@ -17,4 +17,9 @@
       OLUMIDE OGUNDELE FRANCIS
   </author>
 
+<plugin name="cordova-plugin-device" spec="~2.0.3" />
+<plugin name="cordova-plugin-device-motion" spec="~2.0.1" />
+
+
+
 </widget>
