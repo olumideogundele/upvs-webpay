@@ -1,5 +1,9 @@
-<widget id="com.pgb.brewapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="https://phonegap.com/ns/1.0">
-	<preference name="phonegap-version" value="cli-9.0.0"/>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.ezyride.dcare"
+	versionCode="1"
+	version   = "1.0.0">
+	<preference name="phonegap-version" value="cli-6.5.0"/>
 
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <access origin="*" />
@@ -10,7 +14,7 @@
     <platform name="winphone" />
 	
     <name>UPVS</name>
-    <description>Ultimate Power Vending System</description>
+    <description>ULTIMATE POWER VENDING SYSTEM</description>
     <author href="https://www.tinuten.org" email="info@tinuten.org">Olumide Francis</author>
     <!--<content src="index.html" />-->
     <preference name="permissions" value="none" />
@@ -28,8 +32,8 @@
 	<preference name="ErrorUrl" value="index.html" />
 <preference name="KeepRunning" value="true"/>.
 	<preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="12" />
-    <preference name="android-targetSdkVersion" value="25" />
+    <preference name="android-minSdkVersion" value="10" />
+    <preference name="android-targetSdkVersion" value="26" />
     <preference name="android-installLocation" value="auto" />
  
 	 
@@ -39,13 +43,16 @@
 	
    <plugin name="cordova-plugin-geolocation"  spec="0.3.12" source="npm"/>
 <plugin name="cordova-plugin-network-information"  spec="0.2.15" source="npm" />
- 
-  
+ <gap:plugin name="cordova-plugin-vibration" source="npm" version="2.1.1" />
+  <gap:plugin name="de.appplant.cordova.plugin.badge" source="npm" /> 
 	
-	
+	<feature name="Notification">
+    <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+</feature>
+
  	  <plugin name="cordova-plugin-device" value="org.apache.cordova.device"/>
-    
-    
+    <plugin name="cordova-plugin-device-motion" source="npm"/>
+    <plugin name="cordova-plugin-device-orientation" source="npm"/>
     <plugin name="cordova-plugin-dialogs" source="npm"/>
 <plugin name="cordova-plugin-file" spec="~6.0.0" />    
  <plugin name="cordova-plugin-globalization" source="npm"/>
@@ -91,7 +98,14 @@
  
 	
 	
-  
+ 
+
+   <!-- <plugin name="org.apache.cordova.device" version="0.2.3" source="npm"/> -->
+    
+ 
+		
+		<feature name="http://tizen.org/api/systeminfo" required="true"/>
+		 
 		<feature name="http://api.phonegap.com/1.0/media" />
 		<feature name="http://api.phonegap.com/1.0/network" />
 		<feature name="http://api.phonegap.com/1.0/notification" />
