@@ -1,47 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- <script>
- 
- 
-	
-	function showUser() {
-	  global_ = "";
-	   
-	str = "not"
-    if (str == "") {
-        
-        return;
-    } else { 
-        if (window.XMLHttpRequest) {
-            // code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp = new XMLHttpRequest();
-        } else {
-            // code for IE6, IE5
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                
-			 global_ = this.responseText
-			 
-		    if(global_ !== "-")
-		    {
-			 cordova.plugins.notification.badge.set(global_, showToast);
-			     navigator.notification.vibrate(2000);
-			    showAlert(global_);
-			//alert(global_);		 
-		    } 
-				
-		    
-            }
-        };
-        xmlhttp.open("GET","https://payall.com.ng/upvs-webpay/message-count.php",true);
-        xmlhttp.send();
-    }
-	
- 
-}
-	</script>
+
 <script src="offline.min.js"></script>
 	  
 	   <link rel="stylesheet" href="offline-theme-hubspot.css" />
