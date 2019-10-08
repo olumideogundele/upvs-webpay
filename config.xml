@@ -32,8 +32,8 @@
 	<preference name="ErrorUrl" value="index.html" />
 <preference name="KeepRunning" value="true"/>.
 	<preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="10" />
-    <preference name="android-targetSdkVersion" value="23" />
+    <preference name="android-minSdkVersion" value="12" />
+    <preference name="android-targetSdkVersion" value="25" />
     <preference name="android-installLocation" value="auto" />
  
 	 
@@ -43,16 +43,13 @@
 	
    <plugin name="cordova-plugin-geolocation"  spec="0.3.12" source="npm"/>
 <plugin name="cordova-plugin-network-information"  spec="0.2.15" source="npm" />
- <gap:plugin name="cordova-plugin-vibration" source="npm" version="2.1.1" />
-  <gap:plugin name="de.appplant.cordova.plugin.badge" source="npm" /> 
+ 
+  
 	
-	<feature name="Notification">
-    <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-</feature>
-
+	
  	  <plugin name="cordova-plugin-device" value="org.apache.cordova.device"/>
-    <plugin name="cordova-plugin-device-motion" source="npm"/>
-    <plugin name="cordova-plugin-device-orientation" source="npm"/>
+    
+    
     <plugin name="cordova-plugin-dialogs" source="npm"/>
 <plugin name="cordova-plugin-file" spec="~6.0.0" />    
  <plugin name="cordova-plugin-globalization" source="npm"/>
