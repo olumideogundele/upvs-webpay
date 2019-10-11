@@ -12,18 +12,30 @@
   
   <preference name="KeepRunning" value="false"/>
 <preference name="LoadUrlTimeoutValue" value="10000"/>
-<preference name="InAppBrowserStorageEnabled" value="true"/>
 <preference name="LoadingDialog" value="ULTIMATE POWER VENDING SYSTEM"/>
 <preference name="ErrorUrl" value="error.html"/>
 <preference name="ShowTitle" value="true"/>
 <preference name="LogLevel" value="VERBOSE"/>
 <preference name="AndroidLaunchMode" value="singleTop"/>
 <preference name="DefaultVolumeStream" value="call" />
-<preference name="OverrideUserAgent" value="Mozilla/5.0 My Browser" />
-<preference name="AppendUserAgent" value="My Browser" />
   
   
-  
+   <preference name="permissions" value="none" />
+	<preference name="android-build-tool" value="gradle" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="disallowOverscroll" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+
+<preference name="KeepRunning" value="true"/>.
+	<preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="auto" />
   
  
 <icon platform="ios" height="60" width="60" src="res/icons/ios/icon-60.png" />
