@@ -19,11 +19,11 @@
     <preference name="webviewbounce" value="false" />
     <preference name="disallowOverscroll" value="true" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
+    <preference name="stay-in-webview" value="true" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-	<preference name="ErrorUrl" value="index.html" />
+	<preference name="ErrorUrl" value="error.html" />
 <preference name="KeepRunning" value="true"/>.
 	<preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="10" />
