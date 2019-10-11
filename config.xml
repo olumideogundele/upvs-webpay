@@ -64,7 +64,7 @@
  
    
  
-  
+     <plugin name="cordova-plugin-inappbrowser" source="npm"/>
   
   <content src="index.html" />
 
