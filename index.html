@@ -6,9 +6,13 @@
  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0;URL= https://payall.com.ng/upvs-webpay/" />   
+    <!--<meta http-equiv="refresh" content="0;URL= https://payall.com.ng/upvs-webpay/" /> -->  
 	<meta charset="UTF-8">
-	
+	<script>
+function myFunction() {
+  location.replace("https://payall.com.ng/upvs-webpay/")
+}
+</script>
 	<title>UPVS</title>
 	
 <style>
@@ -29,17 +33,15 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
-	//paste this code under head tag or in a seperate js file.
-	// Wait for window load
+	
 	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
+$(".se-pre-con").fadeOut("slow");;
 	});
 </script>
 
 </head>
 
-<body>
+<body onLoad="myFunction()">
 	<!-- Paste this code after body tag -->
 	<div class="se-pre-con"></div>
 	<!-- Ends -->
