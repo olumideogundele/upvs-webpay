@@ -9,11 +9,8 @@
   <author href="https://tinuten.org" email="support@tinuten.com">
       OLUMIDE OGUNDELE FRANCIS
   </author>
+ 
   
-   <name>ezyride</name>
-    <description>Comfort Redefined</description>
-    <author href="http://www.online.ezyride.com" email="info@ezyride.com">Olumide Francis</author>
-    <!--<content src="index.html" />-->
     <preference name="permissions" value="none" />
 	<preference name="android-build-tool" value="gradle" />
     <preference name="orientation" value="default" />
