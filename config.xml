@@ -11,7 +11,10 @@
   </author>
  
   
-    <preference name="permissions" value="none" />
+   
+	
+	
+	 <preference name="permissions" value="none" />
 	<preference name="android-build-tool" value="gradle" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
@@ -19,20 +22,23 @@
     <preference name="webviewbounce" value="false" />
     <preference name="disallowOverscroll" value="true" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="true" />
+    <preference name="stay-in-webview" value="false" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-	<preference name="ErrorUrl" value="error.html" />
-	<preference name="KeepRunning" value="true"/>.
+	<preference name="ErrorUrl" value="index.html" />
+<preference name="KeepRunning" value="true"/>.
 	<preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="10" />
-    <preference name="android-targetSdkVersion" value="27" />
+    <preference name="android-targetSdkVersion" value="28" />
     <preference name="android-installLocation" value="auto" />
- 
+	
+	
+	
+	
 	 
 	<preference name="target-device" value="universal" />
-	<preference name="deployment-target" value="8.0" />
+ 
   <plugin name="cordova-plugin-geolocation" source="npm"/>
  
 <icon platform="ios" height="60" width="60" src="res/icons/ios/icon-60.png" />
